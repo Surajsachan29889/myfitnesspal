@@ -20,7 +20,7 @@ export const Form7card = ({ next }) => {
 
   const handleSubmit = () => {
     const options = {
-      url: "https://salty-hamlet-78204.herokuapp.com/users",
+      url: "http://localhost:5000/users",
       method: "POST",
       headers: {
         Accept: "application/json",
