@@ -11,7 +11,7 @@ function NutritionFacts({ close, id }) {
   const [food, setFood] = useState({});
   useEffect(() => {
     axios
-      .get(`https://salty-hamlet-78204.herokuapp.com/food/find?id=${id}`)
+      .get(`https://localhost:5000/food/find?id=${id}`)
       .then(({ data: { food } }) => {
         console.log(food);
         setFood(food);

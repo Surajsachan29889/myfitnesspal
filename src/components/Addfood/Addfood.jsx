@@ -41,7 +41,7 @@ const Extra = ({ name, id, type }) => {
   };
   const post = (id) => {
     axios
-      .post("https://salty-hamlet-78204.herokuapp.com/list", {
+      .post("https://localhost:5000/list", {
         userId: "Fred",
         foodId: `${id}`,
         cat: type,
